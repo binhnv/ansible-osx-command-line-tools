@@ -20,7 +20,7 @@
   register: clt
 
 - name: Print active developer directory path
-  command: xcode-select -p &> /dev/null
+  shell: xcode-select -p &> /dev/null
   register: ddp
   ignore_errors: true
   changed_when: false
